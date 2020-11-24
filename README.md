@@ -13,12 +13,19 @@
 
 #### 함수에 대한 설명
 > create_stack()	stack 생성 및 stack 내부 설정
+
 push(STACK* stack, void* in) stack주소, 데이터 입력후 그에대한 stack의 노드를 push
+
 pop(STACK* stack) stack에 저장된 노드를 pop
+
 playstack()	stack의 동작을 선택하고 볼 수 있는 함수
+
 CreateQueue()	queue 생성 및 queue 내부 설정
+
 Enqueue(QUEUE* pQueue, void* item) queue주소, 데이터 입력후 그에 대한 queue의 노드를 enque
+
 Dequeue(QUEUE* pQueue) queue에 저장된 노드를 dequeue
+
 playqueue()	queue의 동작을 선택하고 볼 수 있는 함수
 
 #### 2. HW2
