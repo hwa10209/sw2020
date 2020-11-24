@@ -69,8 +69,8 @@ def login():
 
 def apply(i):
     try:
-        driver.find_element_by_xpath('//*[@id="lectPackReqGrid_' + str(i) + '"]/td[11]/a').click()
-        #수강꾸러미에 있는 과목이 신청이 가능해 졌을 때 수강신청 버튼 클릭
+        
+        #수강꾸러미에 있는 과목이 신청이 가능해 졌을 때 수강신청 버튼 클릭(코드 지움)
         alert()
         #신청 되었음을 알림
     except:
