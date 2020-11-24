@@ -46,25 +46,19 @@ def login():
 
     clipboard.copy(std)
     driver.find_element_by_xpath('//*[@id="user.stu_nbr"]').click()
-    #학번 칸 클릭
-
+    #학번 칸 클릭됨
     #입력한 학번이 학번 칸에 입력 됨(코드 지움)
 
     clipboard.copy(id)
-    driver.find_element_by_xpath('//*[@id="user.usr_id"]').click()
-    #아이디 칸 클릭
-
-
+    #아이디 칸 클릭됨(코드 지움)
     # 입력한 아이디가 아이디 칸에 입력 됨(코드 지움)
 
     clipboard.copy(pw)
-    driver.find_element_by_xpath('//*[@id="user.passwd"]').click()
-    #비밀번호 칸 클릭
-
+    #비밀번호 칸 클릭됨(코드 지움)
     #입력한 비밀번호가 비밀번호 칸에 입력 됨(코드 지움)
 
     driver.find_element_by_xpath('//*[@id="loginForm"]/table/tbody/tr[4]/td/button[1]').click()
-    #로그인 버튼 클릭
+    #로그인 버튼 클릭됨
 
 
 def apply(i):
@@ -72,7 +66,6 @@ def apply(i):
         
         #수강꾸러미에 있는 과목이 신청이 가능해 졌을 때 수강신청 버튼 클릭(코드 지움)
         alert()
-        #신청 되었음을 알림
     except:
         print("오류발생")
 
