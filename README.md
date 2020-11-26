@@ -1,7 +1,7 @@
 # EECS462001 멀티미디어시스템개론 / 2020년 1학기 / 박순용
 
 > 멀티미디어시스템개론 과목을 수강하며 수행한 과제들 입니다.
-
+<br> Visual studio IDE에서 C언어를 이용하였고 OpenCV 라이브러리를 주로 이용하였습니다.
 ## 요약
 
 > HW1(code x) : DSI (Display Serial Interface) 프로토콜<br>
