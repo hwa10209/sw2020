@@ -20,7 +20,7 @@
 
 > 구성 요소들로 회로를 꾸미고 하나의 보드를 제작
 
-#### 스케이트보드 알고리즘
+#### 스케이트보드 소프트웨어
 
 ![](https://github.com/hwa10209/Capstone/blob/master/img/3.PNG)
 
