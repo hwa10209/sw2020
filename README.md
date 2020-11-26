@@ -16,14 +16,47 @@
 
 #### 다이어그램
 ![](https://github.com/hwa10209/OS/blob/master/img/1_1.bmp)
+
 #### 함수에 대한 설명
-> create_stack()	stack 생성 및 stack 내부 설정<br>push(STACK* stack, void* in) stack주소, 데이터 입력후 그에대한 stack의 노드를 push
-<br>pop(STACK* stack) stack에 저장된 노드를 pop
-<br>playstack()	stack의 동작을 선택하고 볼 수 있는 함수
-<br>CreateQueue()	queue 생성 및 queue 내부 설정
-<br>Enqueue(QUEUE* pQueue, void* item) queue주소, 데이터 입력후 그에 대한 queue의 노드를 enque
-<br>Dequeue(QUEUE* pQueue) queue에 저장된 노드를 dequeue
-<br>playqueue()	queue의 동작을 선택하고 볼 수 있는 함수
+```
+create_stack()
+```
+> stack 생성 및 stack 내부 설정
+
+```
+push(STACK* stack, void* in)
+```
+> stack주소, 데이터 입력후 그에대한 stack의 노드를 push
+
+```
+pop(STACK* stack)
+```
+> stack에 저장된 노드를 pop
+
+```
+playstack()
+```
+> stack의 동작을 선택하고 볼 수 있는 함수
+
+```
+CreateQueue()
+```
+> queue 생성 및 queue 내부 설정
+
+```
+Enqueue(QUEUE* pQueue, void* item)
+``` 
+> queue주소, 데이터 입력후 그에 대한 queue의 노드를 enque
+
+```
+Dequeue(QUEUE* pQueue)
+``` 
+> queue에 저장된 노드를 dequeue
+
+```
+playqueue()
+```
+> queue의 동작을 선택하고 볼 수 있는 함수
 
 #### 결과
 
@@ -53,11 +86,31 @@
 #### 다이어그램
 ![](https://github.com/hwa10209/OS/blob/master/img/2_1.bmp)
 #### 함수에 대한 설명
-> main()		Myshell의 시작. 사용가능한 명령어들을 보여주고 입력 받을 수 있음.<br>
-ls(int a)		ls 또는 ls –al 명령어를 사용하기 위한 함수. 현재 디렉토리의 파일, 폴더 리스트를 나열해주는 함수.<br>
-mkdir(char (포인터)b) mkdir 명령어를 사용하기 위한 함수. 추가로 이름을 입력 받아 현재 위치에 새 디렉토리를 만들 수 있게 해주는 함수.<br>
-pwd()		pwd 명령어를 사용하기 위한 함수. 현재 위치 표시.<br>
-exit(함수x)		종료.<br>
+```
+main()
+```
+> Myshell의 시작. 사용가능한 명령어들을 보여주고 입력 받을 수 있음.
+
+```
+ls(int a)
+```
+> ls 또는 ls –al 명령어를 사용하기 위한 함수. 현재 디렉토리의 파일, 폴더 리스트를 나열해주는 함수.
+
+```
+mkdir(char *b)
+```
+> mkdir 명령어를 사용하기 위한 함수. 추가로 이름을 입력 받아 현재 위치에 새 디렉토리를 만들 수 있게 해주는 함수.
+
+```
+pwd()
+```
+> pwd 명령어를 사용하기 위한 함수. 현재 위치 표시.
+
+```
+exit
+```
+> 종료.
+
 
 #### 결과
 ![](https://github.com/hwa10209/OS/blob/master/img/2_2.bmp)
@@ -85,21 +138,53 @@ exec계열의 함수 종류와 사용법 참고.
 ![](https://github.com/hwa10209/OS/blob/master/img/3_4.bmp)
 #### 함수에 대한 설명
 * Bank
-> main()		bank.c 의 main, deposit, withdraw쓰레드를 100개씩 만들고 실행.<br>
-deposit()	1원 저축을 500번 수행함<br>
-withdraw()	1원 출금을 500번 수행함<br>
+```
+main()
+```
+> bank.c 의 main, deposit, withdraw쓰레드를 100개씩 만들고 실행.
+
+```
+deposit()
+```
+> 1원 저축을 500번 수행함
+
+```
+withdraw()
+```
+> 1원 출금을 500번 수행함
 
 * Bank2
-> main()		bank2.c 의 main, deposit, withdraw쓰레드를 100개씩 만들고 실행.mutex 생성, 설정.  기존의 critical section을 서로 고립시켜주었음.
-<br>deposit()	1원 저축을 500번 수행함, mutex lock, unlock
-<br>withdraw()	1원 출금을 500번 수행함, mutex lock, unlock
+```
+main()
+```
+> bank2.c 의 main, deposit, withdraw쓰레드를 100개씩 만들고 실행.mutex 생성, 설정.  기존의 critical section을 서로 고립시켜주었음.
+
+```
+deposit()
+```
+> 1원 저축을 500번 수행함, mutex lock, unlock
+
+```
+withdraw()
+```
+> 1원 출금을 500번 수행함, mutex lock, unlock
 
 * Single
-> main()		single_mat.c 의 main, 3X3행렬 계산 및 출력
+```
+main()
+```
+> single_mat.c 의 main, 3X3행렬 계산 및 출력
 
 * Multi
-> main()		multi_mat.c 의 main, 3X3 행렬 계산 및 출력, mulf 쓰레드 생성. 쓰레드 하나당 한 행X한 열 을 계산하고 저장한다. (총 3개의 쓰레드)
-<br>mulf(void args) 계산완료 후의 행렬의 각 행을 의미하는 값을 받아서 그 행다른열들의 곱을 수행
+```
+main()
+```
+> multi_mat.c 의 main, 3X3 행렬 계산 및 출력, mulf 쓰레드 생성. 쓰레드 하나당 한 행X한 열 을 계산하고 저장한다. (총 3개의 쓰레드)
+
+```
+mulf(void args)
+```
+> 계산완료 후의 행렬의 각 행을 의미하는 값을 받아서 그 행다른열들의 곱을 수행
 
 
 #### 결과
@@ -137,9 +222,24 @@ https://blog.naver.com/dwc2206/221009412148<br>matrix 다루기
 ![](https://github.com/hwa10209/OS/blob/master/img/4_1.bmp)
 #### 함수에 대한 설명
 >FirstHeapLocation, FirststackLocation등 함수에서도 쓰이는 변수들을 편하게 쓰기위해 정의함
-<br>main() 프로그램 실행행시 스택과 힙에 지정해줄 기본단위의 크기를 받고 그 크기를 가지고 스택, 힙을 채워본다.  또한 힙과 스택이 쌓이는 초기위치를 출력. 임의의 숫자를 입력하면 메가바이트 단위로 설정되도록 코드를 구성.
-<br>Memory_allocation(int HEAP_ALLOC, int STACK_ALLOL) 힙과 스택을 채울 기본 단위크기를 받아 호출되고 stack의 특성을 살리기 위해 recursive 구조로 작성됨. 힙을 채우는 코드도 포함되어있어 한번 호출되면 힙과 스택을 한 칸씩 채운다. 그리고 스스로를 호출한다.
-<br>commas	예제와 함께 주어진 함수. 긴 주소를 16진수로 줄여서 표현해준다. prepend, preprintf 마찬가지로 주어진 함수. commas함수에서 사용된다.
+
+```
+main()
+```
+> 프로그램 실행행시 스택과 힙에 지정해줄 기본단위의 크기를 받고 그 크기를 가지고 스택, 힙을 채워본다.  또한 힙과 스택이 쌓이는 초기위치를 출력. 임의의 숫자를 입력하면 메가바이트 단위로 설정되도록 코드를 구성.
+
+```
+Memory_allocation(int HEAP_ALLOC, int STACK_ALLOL)
+```
+> 힙과 스택을 채울 기본 단위크기를 받아 호출되고 stack의 특성을 살리기 위해 recursive 구조로 작성됨. 힙을 채우는 코드도 포함되어있어 한번 호출되면 힙과 스택을 한 칸씩 채운다. 그리고 스스로를 호출한다.
+```
+commas
+```
+> 예제와 함께 주어진 함수. 긴 주소를 16진수로 줄여서 표현해준다.
+```
+prepend, preprintf
+```
+> 마찬가지로 주어진 함수. commas함수에서 사용된다.
 #### 결과
 
 ![](https://github.com/hwa10209/OS/blob/master/img/4_2.bmp)
@@ -181,10 +281,46 @@ https://blog.naver.com/dwc2206/221009412148<br>matrix 다루기
 
 #### 함수에 대한 설명
 * Device driver
-> mydrv_open() 실행파일에서 장치파일을 열 때 커널에서 호출하는 함수<br>mydrv_release() 장치파일을 닫을 때 커널에서 호출하는 함수<br>mydrv_read() 실행파일에서 read함수 사용시 호출됨.  메모리에 저장된 값을 한 글자씩 읽어 실행파일로 전달함.<br>mydrv_write() 실행파일에서 write함수 사용시 호출됨.  메모리에 한글자씩 값을 저장한다. 메모리 공간에 번호를 지정해 두고 100글자가 넘어가면 100칸 앞으로 이동하여 덮어쓰기 기능을 구현해주었고 알파벳 입력 시 소문자는 대문자로, 대문자는 소문자로 저장해 주었다.<br>mydrv_init() 모듈 적재시 초기화 수행<br>mydrv_cleanup()모듈 제거 시 반환 작업 수행<br>read() 메모리에서 데이터를 읽어온다.
+```
+mydrv_open()
+```
+> 실행파일에서 장치파일을 열 때 커널에서 호출하는 함수
+
+```
+mydrv_release()
+```
+> 장치파일을 닫을 때 커널에서 호출하는 함수
+
+```
+mydrv_read()
+```
+> 실행파일에서 read함수 사용시 호출됨.  메모리에 저장된 값을 한 글자씩 읽어 실행파일로 전달함.
+
+```
+mydrv_write()
+```
+> 실행파일에서 write함수 사용시 호출됨.  메모리에 한글자씩 값을 저장한다. 메모리 공간에 번호를 지정해 두고 100글자가 넘어가면 100칸 앞으로 이동하여 덮어쓰기 기능을 구현해주었고 알파벳 입력 시 소문자는 대문자로, 대문자는 소문자로 저장해 주었다.
+
+```
+mydrv_init()
+```
+> 모듈 적재시 초기화 수행
+
+```
+mydrv_cleanup()
+```
+> 모듈 제거 시 반환 작업 수행
+
+```
+read()
+```
+> 메모리에서 데이터를 읽어온다.
 
 * 실행파일
->write() 메모리에 데이터를 저장한다.<br>
+```
+write()
+```
+> 메모리에 데이터를 저장한다.
 
 #### 결과
 
